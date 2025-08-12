@@ -1,0 +1,351 @@
+/* Contact Page Styles */
+.contact-page {
+  min-height: 100vh;
+}
+
+/* Contact Hero Section */
+.contact-hero {
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  padding: 4rem 0 3rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.contact-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+.team-section {
+  padding: 4rem 0;
+  background: var(--very-light-green);
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Team Member Cards */
+.team-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(45, 90, 39, 0.1);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(45, 90, 39, 0.15);
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-green), var(--secondary-green));
+}
+
+/* Team Member Image */
+.team-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--accent-green);
+  position: relative;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.1);
+}
+
+/* Team Info */
+.team-info {
+  text-align: center;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: var(--secondary-green);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+/* Contact Info */
+.team-contact {
+  margin-bottom: 1.5rem;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--medium-gray);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  background: var(--very-light-green);
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  background: var(--light-green);
+  color: var(--primary-green);
+  transform: translateY(-2px);
+}
+
+.email-icon {
+  font-size: 1rem;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.social-link.instagram {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: var(--white);
+}
+
+.social-link.facebook {
+  background: #1877f2;
+  color: var(--white);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+  font-size: 1rem;
+}
+
+/* Contact Info Section */
+.contact-info {
+  padding: 4rem 0;
+  background: var(--white);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  text-align: center;
+  padding: 2rem;
+  background: var(--very-light-green);
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.contact-item h3 {
+  color: var(--primary-green);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-item p {
+  color: var(--medium-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.app-link {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-green), var(--secondary-green));
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(104, 187, 89, 0.3);
+}
+
+.app-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(104, 187, 89, 0.4);
+}
+
+/* Page Placeholder */
+.page-placeholder {
+  padding: 5rem 0;
+  text-align: center;
+  background: var(--very-light-green);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.page-placeholder h1 {
+  color: var(--primary-green);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-placeholder p {
+  color: var(--medium-gray);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/* Navigation Button Styles */
+.nav-link {
+  background: none;
+  border: none;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: var(--accent-green);
+  box-shadow: 0 4px 15px rgba(104, 187, 89, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-card {
+    padding: 1.5rem;
+  }
+
+  .team-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .social-link {
+    justify-content: center;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .team-section {
+    padding: 3rem 0;
+  }
+
+  .team-card {
+    padding: 1.2rem;
+  }
+
+  .team-name {
+    font-size: 1.3rem;
+  }
+
+  .contact-email {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .social-link {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
