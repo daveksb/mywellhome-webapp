@@ -65,7 +65,7 @@ const App = () => {
                 </div>
                 <div className="hero-image">
                   <img 
-                    src="/health.png" 
+                    src={`${import.meta.env.BASE_URL}health.png`} 
                     alt="Smart Healthcare - Telemedicine and Digital Health"
                     className="healthcare-illustration"
                   />
